@@ -1,0 +1,41 @@
+
+<ion-content [fullscreen]="true">
+
+  <div class="text center bold">
+    Heureux de vous revoir!
+  </div>
+
+  <form>
+    <div class="ion-margin-top">
+      <ion-input type="text"  label="Numero de telephone" required labelPlacement="floating" placeholder="Numero de telephone"></ion-input>
+    </div>
+
+    <div class="ion-margin-top">
+      <ion-input type="password"  label="Mot de passe" required labelPlacement="floating" placeholder="Mot de passe"></ion-input>
+    </div>
+    <div class="btn">
+      <ion-button fill="clear" routerLink="/tabs">Connexion</ion-button>
+    </div>
+  </form>
+
+  <div class="or center">
+    <div class="line"></div> Ou se connecter avec <div class="line"></div>
+  </div>
+
+  <div class="center bold" *ngIf="choice === 'qrCode'">
+    Connectez-vous au bluetooth:  &nbsp;<span class="blues">HC05</span>
+  </div>
+
+  <div class="social center">
+    <div class="cadre center">
+      <ion-icon name="fb"></ion-icon>
+    </div>
+    <div class="cadre center">
+      <ion-icon name="google"></ion-icon>
+    </div>
+    <div class="cadre center">
+      <ion-icon name="apple"></ion-icon>
+    </div>
+  </div>
+  <div class="botton center" >Vous n'avez de compte?  <span>Creer un compte.</span></div>
+</ion-content>

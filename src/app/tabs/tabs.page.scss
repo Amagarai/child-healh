@@ -1,0 +1,53 @@
+.div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  font-family: 'Jost';
+}
+
+:host {
+  ion-tab-bar{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #107a8f;
+    border-radius: 18px;
+  }
+  ion-tab-button {
+    display: flex;
+    align-items: center;
+    background-color: #107a8f;
+  }
+  ion-label{
+    display: none;
+  }
+  ion-icon{
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .tab-selected{
+    ion-label{
+      display: block;
+      font-weight: bold;
+      color: #fff;
+    }
+    ion-icon{
+      color: #fff;
+    }
+    .fort{
+      margin-left: 15px;
+    }
+    &::before{
+      content: "";
+      width: 28px;
+      // height:5px;
+      position: absolute;
+      top: 0px;
+      text-align: center;
+      border-top: 2px solid #fff;
+    }
+  }
+}

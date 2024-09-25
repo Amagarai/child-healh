@@ -1,0 +1,15 @@
+<ion-tabs (ionTabsDidChange)="tabClicked($event)">
+  <div class="div">
+    <ion-tab-bar  slot="bottom">
+      <ion-tab-button  tab="home">
+        <ion-icon name="{{actuelTab === 'home'? 'homec': 'home'}}"></ion-icon>
+        <ion-label>Accueil</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="history">
+        <ion-icon name="{{actuelTab === 'history'? 'timec': 'time'}}"></ion-icon>
+        <ion-label>Historiques</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </div>
+</ion-tabs>
